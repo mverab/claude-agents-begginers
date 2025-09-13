@@ -50,6 +50,8 @@ This repository contains a **guided 4-step system** that takes you from idea to 
 
 4. **Enjoy your new agent!** 🎉
 
+For coding agents (Cursor, Aider, Copilot, etc.), see `AGENTS.md` for a lean, machine-readable guide.
+
 ## What You'll Build
 
 Popular first agents include:

@@ -50,6 +50,8 @@ Este repositorio contiene un **sistema guiado de 4 pasos** que te lleva de la id
 
 4. **¡Disfruta tu nuevo agente!** 🎉
 
+Para agentes de código (Cursor, Aider, Copilot, etc.), consulta `AGENTS.md` para una guía mínima y legible por máquina.
+
 ## Qué Construirás
 
 Primeros agentes populares incluyen:
@@ -95,3 +97,24 @@ Primeros agentes populares incluyen:
 👉 **[Lee la Guía Completa de Inicio](GETTING_STARTED.md)** (en inglés)
 
 ¿Listo para construir tu primer agente? ¡El sistema guiado lo hace fácil! 🚀
+
+## Compatibilidad con AGENTS.md
+
+Este repositorio incluye un `AGENTS.md` en la raíz y otro anidado en `guided-agents/AGENTS.md`. También funciona con todos los proveedores que soportan el estándar AGENTS.md. Ejemplos populares:
+
+- Cursor
+- Aider
+- Agente de código de GitHub Copilot
+- Zed
+- Google Gemini CLI
+- RooCode
+- Factory
+- Amp
+- Ona
+- Phoenix
+- VS Code (reglas de proyecto para IA)
+- Warp
+- Semgrep
+- Devin
+
+Los agentes leen el `AGENTS.md` más cercano en el árbol de directorios (gana el más próximo). Más info: https://agents.md/

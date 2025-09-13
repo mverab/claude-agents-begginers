@@ -1,58 +1,16 @@
-# Guided Agents for Beginners 🚀
+# guided-agents/
 
-This directory contains the 4-step guided system for creating your first Claude agent.
+Minimal, results-driven 4-step flow for beginners:
+- agent-idea-guide → agent-builder → agent-installer → agent-tester
 
-## Quick Installation
+AGENTS.md compatibility:
+- This folder includes a local `AGENTS.md` so coding agents that support the AGENTS.md standard can work here directly (nearest file wins).
+- Works with providers like Cursor, Aider, GitHub Copilot’s coding agent, Zed, Google Gemini CLI, RooCode, Factory, Amp, Ona, Phoenix, VS Code (project AI rules), Warp, Semgrep, Devin.
+- Learn more: https://agents.md/
 
-Copy these guided agents to your Claude directory:
-
+Install (copy-only):
 ```bash
-# For global use (recommended)
-mkdir -p ~/.claude/agents
-cp guided-agents/*.md ~/.claude/agents/
-
-# Or for project-specific use
-mkdir -p .claude/agents
-cp guided-agents/*.md .claude/agents/
-```
-
-## The 4 Guided Agents
-
-### 🔵 agent-idea-guide.md
-**Step 1: Discover & Refine Your Idea**
-- Helps you turn vague concepts into clear agent definitions
-- Asks the right questions to scope your agent
-- No technical knowledge required
-
-### 🟢 agent-builder.md  
-**Step 2: Build Your Agent**
-- Creates a working agent from your refined idea
-- Handles all technical complexity automatically
-- Explains the process as it builds
-
-### 🟠 agent-installer.md
-**Step 3: Install Your Agent**
-- Automatically sets up your agent in Claude Code
-- Chooses the best installation location
-- Verifies everything works correctly
-
-### 🟣 agent-tester.md
-**Step 4: Test & Optimize**
-- Guides you through comprehensive testing
-- Identifies and helps fix any issues
-- Ensures your agent works perfectly
-
-## How to Start
-
-1. **Install the agents** (see commands above)
-2. **Start a conversation** with Claude Code
-3. **Say**: "I want to use the agent-idea-guide to create my first agent"
-4. **Follow the guided process** - each agent will hand you to the next
-
-## Total Time: ~30 minutes
-- Step 1: 10-15 minutes (idea refinement)
-- Step 2: 15-20 minutes (building)
-- Step 3: 2-3 minutes (installation)
-- Step 4: 10-15 minutes (testing)
-
-Ready to build your first agent? Start with the agent-idea-guide! 🎯
+# Global (recommended)
+mkdir -p ~/.claude/agents && cp guided-agents/*.md ~/.claude/agents/
+# Project-scoped
+mkdir -p .claude/agents && cp guided-agents/*.md .claude/agents/

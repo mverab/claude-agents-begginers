@@ -1,0 +1,136 @@
+# Security-focused .gitignore for public Claude agents repository
+
+# === SECURITY CRITICAL ===
+# API keys, tokens, credentials
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+auth/
+keys/
+
+# Claude/OpenAI API keys and configs
+claude-api-key*
+openai-api-key*
+anthropic-key*
+*api-key*
+*secret*
+*token*
+*credential*
+
+# IDE and editor configs that might contain sensitive data
+.vscode/settings.json
+.cursor/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# === TEMPORARY & CACHE FILES ===
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs that might contain sensitive info
+*.log
+logs/
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === DEVELOPMENT ARTIFACTS ===
+# Node.js (if future JS tooling is added)
+node_modules/
+npm-debug.log
+.npm
+.node_repl_history
+
+# Python (if future Python tooling is added)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# === BACKUP & TEMPORARY FILES ===
+# Agent backups (from installer HITL)
+*.bak-*
+*.backup
+*~
+.tmp/
+temp/
+tmp/
+
+# === USER-SPECIFIC FILES ===
+# Personal agent configurations
+.claude/agents/personal-*
+.claude/agents/*-private*
+my-agents/
+personal/
+private/
+
+# Test agents with potentially sensitive prompts
+test-agents/
+experimental/
+sandbox/
+
+# === DOCUMENTATION ARTIFACTS ===
+# Generated docs that might expose internal structure
+docs/build/
+site/
+_site/
+
+# === FUTURE-PROOFING ===
+# Package managers
+.yarn/
+.pnp.*
+package-lock.json
+yarn.lock
+Pipfile.lock
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# === ALLOW ESSENTIAL FILES ===
+# Explicitly allow important files that might match patterns above
+!README*.md
+!AGENTS.md
+!CHANGELOG.md
+!LICENSE
+!GETTING_STARTED.md
